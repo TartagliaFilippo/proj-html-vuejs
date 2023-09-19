@@ -1,5 +1,6 @@
 <script>
 import Dropdown from "./navbar/Dropdown.vue";
+import UserDetail from "./navbar/UserDetail.vue";
 import Searchbar from "./navbar/Searchbar.vue";
 
 export default {
@@ -10,7 +11,7 @@ export default {
     };
   },
 
-  components: { Dropdown, Searchbar },
+  components: { Dropdown, UserDetail, Searchbar },
 };
 </script>
 
@@ -23,6 +24,7 @@ export default {
         :key="item[index]"
         :data="item"
       />
+      <UserDetail />
       <Searchbar />
     </div>
   </div>

@@ -20,5 +20,16 @@ export default {};
 <style lang="scss" scoped>
 .input-group {
   width: 25%;
+
+  .form-control {
+    border: none;
+    background-color: #f5f5f5;
+  }
+
+  .btn {
+    border: none;
+    background-color: #f5f5f5;
+    color: #20ad96;
+  }
 }
 </style>

@@ -1,0 +1,45 @@
+<script>
+export default {};
+</script>
+
+<template>
+  <div class="dropdown">
+    <button
+      class="btn btn-secondary dropdown-toggle"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <font-awesome-icon :icon="['far', 'user']" />
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.dropdown {
+  .btn {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 0;
+    margin: 0 10px;
+
+    &::after {
+      display: none;
+    }
+    font-awesome-icon {
+      height: 0;
+      width: 0;
+    }
+  }
+}
+</style>
