@@ -1,5 +1,3 @@
 import { reactive } from "vue";
 
-export const store = reactive({
-  titleReactive: "TITOLONE",
-});
+export const store = reactive({});

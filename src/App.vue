@@ -17,9 +17,6 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <h1>{{ store.titleReactive }}</h1>
-  </div>
   <HeaderApp />
   <MainApp />
   <FooterApp />
