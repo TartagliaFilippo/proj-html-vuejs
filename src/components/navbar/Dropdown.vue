@@ -3,6 +3,10 @@ export default {
   data() {
     return {};
   },
+
+  props: {
+    data: Array,
+  },
 };
 </script>
 
@@ -15,7 +19,7 @@ export default {
       data-bs-auto-close="true"
       aria-expanded="false"
     >
-      Default dropdown
+      {{ data }}
     </button>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Menu item</a></li>
@@ -25,4 +29,12 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.btn-group {
+  .btn {
+    background-color: white;
+    color: black;
+    border: none;
+  }
+}
+</style>

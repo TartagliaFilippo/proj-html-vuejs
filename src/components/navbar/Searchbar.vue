@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-  <div class="input-group mb-3">
+  <div class="input-group">
     <input
       type="text"
       class="form-control"
@@ -17,4 +17,8 @@ export default {};
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.input-group {
+  width: 25%;
+}
+</style>
