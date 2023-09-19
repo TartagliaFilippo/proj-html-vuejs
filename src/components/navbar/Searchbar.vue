@@ -1,10 +1,19 @@
 <script>
-export default {};
+import { store } from "../../data/store";
+
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <template>
   <div class="input-group">
     <input
+      v-model="store.inputSearch"
       type="text"
       class="form-control"
       placeholder="Search.."

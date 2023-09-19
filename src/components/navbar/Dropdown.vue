@@ -5,7 +5,7 @@ export default {
   },
 
   props: {
-    data: Array,
+    data: String,
   },
 };
 </script>
