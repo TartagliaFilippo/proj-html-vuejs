@@ -12,7 +12,7 @@ export default {};
       aria-describedby="button-addon2"
     />
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-      Button
+      <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
     </button>
   </div>
 </template>
