@@ -2,4 +2,6 @@
 
 <template><h1>inizio progetto</h1></template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@use "./style/general.scss" as *;
+</style>
