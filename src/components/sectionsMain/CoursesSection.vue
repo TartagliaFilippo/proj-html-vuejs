@@ -1,5 +1,5 @@
 <script>
-import CardCourses from "./coursesCard/CardCourses.vue";
+import CardCourses from "./cards/CardCourses.vue";
 
 export default {
   data() {
