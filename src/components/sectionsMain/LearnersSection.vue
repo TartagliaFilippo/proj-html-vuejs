@@ -63,6 +63,7 @@ export default {
 .wrapper {
   background-color: #f5f7fa;
   text-align: center;
+  padding-top: 120px;
 
   .title-container {
     h4 {
