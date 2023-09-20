@@ -146,10 +146,11 @@ export default {
         }
 
         .svg-bg-1 {
+          height: 170px;
           color: #e5c791;
           position: absolute;
-          top: -129;
-          left: -67;
+          top: -100px;
+          left: -67px;
           z-index: -1;
         }
 
