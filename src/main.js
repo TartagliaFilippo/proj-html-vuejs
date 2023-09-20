@@ -11,11 +11,13 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 
 library.add(faMagnifyingGlass);
 library.add(faUser);
 library.add(faDownload);
 library.add(faArrowRight);
+library.add(faFileLines);
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
