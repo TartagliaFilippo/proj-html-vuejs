@@ -3,7 +3,159 @@ export default {};
 </script>
 
 <template>
-  <h3>Jumbo</h3>
+  <div class="wrapper">
+    <div class="container">
+      <div class="main-jumbo">
+        <div class="text-jumbo">
+          <h1>Distant learning for further expansion</h1>
+          <p>
+            Learning is a life-long journey that in fact we never find the
+            terminate stop. Stop searching, enjoy the process.
+          </p>
+          <button class="button">
+            <font-awesome-icon
+              class="icon-fa-download"
+              :icon="['fas', 'download']"
+            />Download free guide
+          </button>
+          <p>
+            Have questions?
+            <a class="link-free" href="#"
+              >Get Free Sample
+              <font-awesome-icon :icon="['fas', 'arrow-right']"
+            /></a>
+          </p>
+        </div>
+        <div class="jumbotron">
+          <div class="svg-container">
+            <img
+              class="bg-svg-1"
+              src="../../../public/img/shapes/maxcoach-shape-02.png"
+              alt=""
+            />
+            <img
+              class="bg-svg-2"
+              src="../../../public/img/shapes/maxcoach-shape-07.png"
+              alt=""
+            />
+            <img
+              class="bg-svg-3"
+              src="../../../public/img/shapes/maxcoach-shape-08.png"
+              alt=""
+            />
+            <img
+              class="bg-svg-4"
+              src="../../../public/img/shapes/maxcoach-shape-08.png"
+              alt=""
+            />
+          </div>
+
+          <div class="image-container">
+            <img
+              src="../../../public/img/jumbotron/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="credits-jumbo">
+        <img src="../../../public/img/logos/client-logo-01.png" alt="" />
+        <img src="../../../public/img/logos/client-logo-02.png" alt="" />
+        <img src="../../../public/img/logos/client-logo-03.png" alt="" />
+        <img src="../../../public/img/logos/client-logo-04.png" alt="" />
+        <img src="../../../public/img/logos/client-logo-05.png" alt="" />
+        <img src="../../../public/img/logos/client-logo-06.png" alt="" />
+        <img src="../../../public/img/logos/client-logo-07.png" alt="" />
+      </div>
+    </div>
+  </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.wrapper {
+  margin-top: 100px;
+  .container {
+    .main-jumbo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .text-jumbo {
+        width: 35%;
+        text-align: left;
+
+        p {
+          color: #958ea3;
+          .link-free {
+            color: #20ad96;
+            text-decoration: none;
+          }
+        }
+
+        .button {
+          background-color: #20ad96;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          margin: 20px 0;
+
+          .icon-fa-download {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .jumbotron {
+        .svg-container {
+          position: relative;
+
+          img {
+            position: absolute;
+            z-index: -1;
+          }
+          & .bg-svg-1 {
+            bottom: -241px;
+            right: -111px;
+          }
+
+          & .bg-svg-2 {
+            bottom: -590px;
+            right: 55px;
+          }
+
+          & .bg-svg-3 {
+            bottom: -460px;
+            left: -100px;
+          }
+
+          & .bg-svg-4 {
+            bottom: -315px;
+            left: -100px;
+          }
+        }
+
+        .image-container {
+          height: 600px;
+          width: 600px;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .credits-jumbo {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin: 60px auto 30px;
+    }
+  }
+}
+</style>

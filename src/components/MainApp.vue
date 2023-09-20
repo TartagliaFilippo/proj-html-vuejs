@@ -19,14 +19,12 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <JumboSection />
-    <CoursesSection />
-    <TutoringSection />
-    <LearnersSection />
-    <NumbersSection />
-    <BlogsSection />
-  </div>
+  <JumboSection />
+  <CoursesSection />
+  <TutoringSection />
+  <LearnersSection />
+  <NumbersSection />
+  <BlogsSection />
 </template>
 
 <style lang="scss" scoped></style>
