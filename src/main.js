@@ -12,12 +12,16 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faFileLines } from "@fortawesome/free-regular-svg-icons";
+import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+import { faEye } from "@fortawesome/free-regular-svg-icons";
 
 library.add(faMagnifyingGlass);
 library.add(faUser);
 library.add(faDownload);
 library.add(faArrowRight);
 library.add(faFileLines);
+library.add(faCalendar);
+library.add(faEye);
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
