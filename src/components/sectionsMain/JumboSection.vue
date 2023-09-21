@@ -2,6 +2,19 @@
 import CircleComp from "../graphicComponents/CircleComp.vue";
 
 export default {
+  data() {
+    return {
+      imageCarusel: [
+        "client-logo-01.png",
+        "client-logo-02.png",
+        "client-logo-03.png",
+        "client-logo-04.png",
+        "client-logo-05.png",
+        "client-logo-06.png",
+        "client-logo-07.png",
+      ],
+    };
+  },
   components: { CircleComp },
 };
 </script>
@@ -64,13 +77,46 @@ export default {
         </div>
       </div>
       <div class="credits-jumbo">
-        <img src="../../../public/img/logos/client-logo-01.png" alt="" />
-        <img src="../../../public/img/logos/client-logo-02.png" alt="" />
-        <img src="../../../public/img/logos/client-logo-03.png" alt="" />
-        <img src="../../../public/img/logos/client-logo-04.png" alt="" />
-        <img src="../../../public/img/logos/client-logo-05.png" alt="" />
-        <img src="../../../public/img/logos/client-logo-06.png" alt="" />
-        <img src="../../../public/img/logos/client-logo-07.png" alt="" />
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1500">
+              <img
+                v-for="item in imageCarusel"
+                :src="'../../../public/img/logos/' + item"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+              <img
+                v-for="item in imageCarusel"
+                :src="'../../../public/img/logos/' + item"
+                alt=""
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev d-none"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next d-none"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -159,10 +205,19 @@ export default {
     .credits-jumbo {
       width: 90%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
 
       margin: 60px auto 30px;
+
+      .active {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin: 0 20px;
+        }
+      }
     }
   }
 }
