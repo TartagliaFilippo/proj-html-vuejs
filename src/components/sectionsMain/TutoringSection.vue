@@ -1,5 +1,6 @@
 <script>
 import CardTutoring from "./cards/CardTutoring.vue";
+import CircleComp from "../graphicComponents/CircleComp.vue";
 
 export default {
   data() {
@@ -30,7 +31,7 @@ export default {
     };
   },
 
-  components: { CardTutoring },
+  components: { CardTutoring, CircleComp },
 };
 </script>
 
@@ -76,6 +77,7 @@ export default {
             src="../../../public/img/shapes/maxcoach-shape-05.png"
             alt=""
           />
+          <CircleComp class="circle" />
         </div>
         <div class="container-text">
           <h4>GET STARTED <span>EFFORTLESSLY</span></h4>
@@ -167,11 +169,19 @@ export default {
           left: -105px;
           z-index: -1;
         }
+
+        .circle {
+          position: absolute;
+          top: -30px;
+          right: -120px;
+          border: 10px solid #ecc5ab;
+        }
       }
 
       .container-text {
         width: 30%;
         text-align: left;
+        margin-top: 60px;
 
         h4 {
           span {

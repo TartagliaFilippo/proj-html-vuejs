@@ -1,5 +1,9 @@
 <script>
-export default {};
+import CircleComp from "../graphicComponents/CircleComp.vue";
+
+export default {
+  components: { CircleComp },
+};
 </script>
 
 <template>
@@ -20,6 +24,7 @@ export default {};
         />
         <button class="btn" type="button" id="button-addon2">Subscribe</button>
       </div>
+      <CircleComp class="circle" />
       <img
         class="svg-bg-1"
         src="../../../public/img/shapes/maxcoach-shape-02.png"
@@ -57,6 +62,7 @@ export default {};
     .input-group {
       input {
         height: 50px;
+        background-color: #f5f5f5;
       }
       .btn {
         background-color: #20ad96;
@@ -66,6 +72,16 @@ export default {};
         border-radius: 5px;
       }
     }
+    .circle {
+      height: 55px;
+      width: 55px;
+      border: 7px solid #8fd6ca;
+
+      position: absolute;
+      bottom: 30px;
+      left: -250px;
+    }
+
     .svg-bg-1 {
       position: absolute;
       right: -250px;

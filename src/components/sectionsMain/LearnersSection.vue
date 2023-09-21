@@ -1,5 +1,6 @@
 <script>
 import CardCarousel from "./cards/CardCarousel.vue";
+import CircleComp from "../graphicComponents/CircleComp.vue";
 
 export default {
   data() {
@@ -34,7 +35,7 @@ export default {
     };
   },
 
-  components: { CardCarousel },
+  components: { CardCarousel, CircleComp },
 };
 </script>
 
@@ -55,6 +56,17 @@ export default {
       <h3>Start today for getting <span>Online Certification</span></h3>
       <h2>You can be your own guiding star with our help!</h2>
       <button>Get started now</button>
+      <CircleComp class="circle" />
+      <img
+        class="svg-bg-1"
+        src="../../../public/img/shapes/maxcoach-shape-01.png"
+        alt=""
+      />
+      <img
+        class="svg-bg-2"
+        src="../../../public/img/shapes/maxcoach-shape-02.png"
+        alt=""
+      />
     </div>
   </div>
 </template>
@@ -89,6 +101,7 @@ export default {
   .certifications-container {
     color: #3f3a64;
     margin-top: 100px;
+    position: relative;
 
     h3 {
       span {
@@ -103,6 +116,27 @@ export default {
       border: none;
       border-radius: 5px;
       margin: 30px auto 120px;
+    }
+
+    .circle {
+      height: 45px;
+      width: 45px;
+      border: 7px solid #e6dcd2;
+
+      position: absolute;
+      bottom: 215px;
+      left: 205px;
+    }
+    .svg-bg-1 {
+      position: absolute;
+      bottom: 177px;
+      left: 215px;
+    }
+
+    .svg-bg-2 {
+      position: absolute;
+      bottom: 110px;
+      right: 200px;
     }
   }
 }

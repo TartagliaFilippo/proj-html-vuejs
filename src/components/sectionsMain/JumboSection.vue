@@ -1,5 +1,9 @@
 <script>
-export default {};
+import CircleComp from "../graphicComponents/CircleComp.vue";
+
+export default {
+  components: { CircleComp },
+};
 </script>
 
 <template>
@@ -28,6 +32,7 @@ export default {};
         </div>
         <div class="jumbotron">
           <div class="svg-container">
+            <CircleComp class="circle" />
             <img
               class="bg-svg-1"
               src="../../../public/img/shapes/maxcoach-shape-02.png"
@@ -109,6 +114,12 @@ export default {};
       .jumbotron {
         .svg-container {
           position: relative;
+
+          .circle {
+            position: absolute;
+            bottom: -460px;
+            left: -44px;
+          }
 
           img {
             position: absolute;
