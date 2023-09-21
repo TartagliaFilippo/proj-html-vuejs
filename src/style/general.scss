@@ -1,4 +1,4 @@
-@use "./partials/mixins.scss" as *;
+@use "./partials/variables.scss" as *;
 @use "./partials/mixins.scss" as *;
 
 * {
@@ -18,4 +18,8 @@
   font-weight: bold;
   border: none;
   border-radius: 5px;
+
+  &:hover {
+    background-color: $hoverButton;
+  }
 }

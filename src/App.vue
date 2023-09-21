@@ -9,12 +9,19 @@ export default {
   data() {
     return {
       store,
+      searchInputArray: [],
     };
   },
 
   methods: {
     handleInput(inputSearch) {
-      console.log(inputSearch);
+      // console.log(inputSearch);
+      this.searchInputArray.push(inputSearch);
+    },
+
+    handleNewsletter(emailInput) {
+      // console.log(emailInput);
+      store.emailsArray.push(emailInput);
     },
   },
 
@@ -26,7 +33,7 @@ export default {
   <div class="wrapper">
     <HeaderApp @input-call="handleInput" />
     <MainApp />
-    <FooterApp />
+    <FooterApp @email-input="handleNewsletter" />
     <a class="btn-up" href="#header"
       ><font-awesome-icon :icon="['fas', 'arrow-up']"
     /></a>

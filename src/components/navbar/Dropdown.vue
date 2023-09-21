@@ -39,6 +39,14 @@ export default {
     background-color: $bgWhite;
     color: $titleColor;
     border: none;
+
+    &:hover {
+      color: $buttonColor;
+      box-shadow: 0px 3px 0px 0px $buttonColor;
+    }
+  }
+  ul {
+    border-bottom: 5px solid $buttonColor;
   }
 }
 </style>

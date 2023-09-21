@@ -140,6 +140,11 @@ export default {
             list-style: none;
             padding: 0;
             margin-bottom: 20px;
+            cursor: pointer;
+
+            &:hover {
+              color: $buttonColor;
+            }
           }
         }
       }

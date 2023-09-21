@@ -2,6 +2,14 @@
 import CircleComp from "../graphicComponents/CircleComp.vue";
 
 export default {
+  data() {
+    return {
+      emailInput: "",
+    };
+  },
+
+  emits: ["email-input"],
+
   components: { CircleComp },
 };
 </script>
@@ -16,13 +24,20 @@ export default {
       </h4>
       <div class="input-group">
         <input
-          type="text"
+          v-model="emailInput"
+          @keyup.enter="$emit('email-input', emailInput)"
+          type="email"
           class="form-control"
           placeholder="Enter your email"
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
         />
-        <button class="btn-green button" type="button" id="button-addon2">
+        <button
+          @click="$emit('email-input', emailInput)"
+          class="btn-green button"
+          type="button"
+          id="button-addon2"
+        >
           Subscribe
         </button>
       </div>

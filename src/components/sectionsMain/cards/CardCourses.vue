@@ -34,6 +34,11 @@ export default {
   gap: 20px;
 
   margin-top: 50px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bgWhite;
+  }
 
   img {
     height: 150px;
@@ -54,6 +59,10 @@ export default {
     h3 {
       color: $titleColor;
       font-size: 25px;
+
+      &:hover {
+        color: $buttonColor;
+      }
     }
 
     span {
