@@ -9,7 +9,7 @@ export default {
 <template>
   <div class="wrapper">
     <div class="container">
-      <h2>Subscribe <span>Newsletters</span></h2>
+      <h2>Subscribe <span class="title-green">Newsletters</span></h2>
       <h4>
         Enter your email adress to register to our newsletter subscription
         delivered on a regular basis!
@@ -22,7 +22,9 @@ export default {
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
         />
-        <button class="btn" type="button" id="button-addon2">Subscribe</button>
+        <button class="btn-green button" type="button" id="button-addon2">
+          Subscribe
+        </button>
       </div>
       <CircleComp class="circle" />
       <img
@@ -50,10 +52,6 @@ export default {
 
     h2 {
       color: #3f3a64;
-
-      span {
-        color: #2eb29c;
-      }
     }
     h4 {
       color: #797979;
@@ -64,12 +62,8 @@ export default {
         height: 50px;
         background-color: #f5f5f5;
       }
-      .btn {
-        background-color: #20ad96;
-        color: white;
+      .button {
         padding: 10px 50px;
-        border: none;
-        border-radius: 5px;
       }
     }
     .circle {

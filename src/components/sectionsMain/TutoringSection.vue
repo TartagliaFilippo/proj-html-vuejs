@@ -40,7 +40,7 @@ export default {
     <div class="container">
       <h4>MAXCOACH AVAILABLE COURSES</h4>
       <h2>
-        Access <span class="green-text">Smart Tutoring</span> Program For
+        Access <span class="title-green">Smart Tutoring</span> Program For
         Benefits.
       </h2>
       <div class="container-cards">
@@ -81,7 +81,7 @@ export default {
         </div>
         <div class="container-text">
           <h4>GET STARTED <span>EFFORTLESSLY</span></h4>
-          <h1>Enjoy Our <span>Companionship</span></h1>
+          <h1>Enjoy Our <span class="title-green">Companionship</span></h1>
           <p>
             Sneek peek into what has in store for you on our online teaching and
             mentoring portal. Seek for some hidden hints of early-bird rewards
@@ -111,10 +111,6 @@ export default {
 
     h2 {
       color: #3f3a64;
-
-      .green-text {
-        color: #20ad96;
-      }
     }
 
     .container-cards {
@@ -192,10 +188,6 @@ export default {
 
         h1 {
           color: #3f3a64;
-
-          span {
-            color: #20ad96;
-          }
         }
 
         p {

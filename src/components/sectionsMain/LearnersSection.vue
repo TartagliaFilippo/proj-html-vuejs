@@ -43,7 +43,7 @@ export default {
   <div class="wrapper">
     <div class="title-container">
       <h4>GREAT WORDS ABOUT MAXCOACH</h4>
-      <h2>Our <span>top learners'</span> verbatim</h2>
+      <h2>Our <span class="title-green">top learners'</span> verbatim</h2>
     </div>
     <div class="carousel-container">
       <CardCarousel
@@ -53,9 +53,12 @@ export default {
       />
     </div>
     <div class="certifications-container">
-      <h3>Start today for getting <span>Online Certification</span></h3>
+      <h3>
+        Start today for getting
+        <span class="title-green">Online Certification</span>
+      </h3>
       <h2>You can be your own guiding star with our help!</h2>
-      <button>Get started now</button>
+      <button class="btn-green button">Get started now</button>
       <CircleComp class="circle" />
       <img
         class="svg-bg-1"
@@ -86,10 +89,6 @@ export default {
     h2 {
       color: #3f3a64;
       margin-bottom: 70px;
-
-      span {
-        color: #20ad96;
-      }
     }
   }
 
@@ -109,12 +108,8 @@ export default {
       }
     }
 
-    button {
-      background-color: #20ad96;
-      color: white;
+    .button {
       padding: 15px 50px;
-      border: none;
-      border-radius: 5px;
       margin: 30px auto 120px;
     }
 

@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <div class="wrapper">
+  <div id="header" class="wrapper">
     <div class="container">
       <img :src="logoPath" class="logo-header" alt="" />
       <Dropdown

@@ -40,7 +40,7 @@ export default {
     <div class="container">
       <div class="text-container">
         <h4>ENJOYABLE INSIGHTS</h4>
-        <h2>Most Viewed <span>Best Blogs</span></h2>
+        <h2>Most Viewed <span class="title-green">Best Blogs</span></h2>
         <ul>
           <li v-for="(item, index) in listItems" :key="listItems[index]">
             {{ item }}
@@ -72,10 +72,6 @@ export default {
 
       h2 {
         color: #3f3a64;
-
-        span {
-          color: #20ad96;
-        }
       }
     }
 

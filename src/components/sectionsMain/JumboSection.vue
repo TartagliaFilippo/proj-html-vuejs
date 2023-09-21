@@ -16,7 +16,7 @@ export default {
             Learning is a life-long journey that in fact we never find the
             terminate stop. Stop searching, enjoy the process.
           </p>
-          <button class="button">
+          <button class="button btn-green">
             <font-awesome-icon
               class="icon-fa-download"
               :icon="['fas', 'download']"
@@ -98,11 +98,7 @@ export default {
         }
 
         .button {
-          background-color: #20ad96;
-          color: white;
           padding: 10px 20px;
-          border: none;
-          border-radius: 5px;
           margin: 20px 0;
 
           .icon-fa-download {

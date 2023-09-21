@@ -67,7 +67,7 @@ export default {
           :data="detail"
         />
       </div>
-      <button>
+      <button class="btn-green button">
         View all courses
         <font-awesome-icon
           class="arrow-fa-right"
@@ -99,12 +99,8 @@ export default {
       flex-wrap: wrap;
     }
 
-    button {
-      background-color: #20ad96;
-      color: white;
+    .button {
       padding: 15px 50px;
-      border: none;
-      border-radius: 5px;
       margin: 70px auto 120px;
 
       .arrow-fa-right {
