@@ -12,13 +12,19 @@ export default {
     };
   },
 
+  methods: {
+    handleInput(inputSearch) {
+      console.log(inputSearch);
+    },
+  },
+
   components: { HeaderApp, MainApp, FooterApp },
 };
 </script>
 
 <template>
   <div class="wrapper">
-    <HeaderApp />
+    <HeaderApp @input-call="handleInput" />
     <MainApp />
     <FooterApp />
     <a class="btn-up" href="#header"

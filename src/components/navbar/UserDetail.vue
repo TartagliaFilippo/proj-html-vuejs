@@ -1,5 +1,7 @@
 <script>
-export default {};
+export default {
+  props: { dataUser: Array },
+};
 </script>
 
 <template>
@@ -13,9 +15,9 @@ export default {};
       <font-awesome-icon :icon="['far', 'user']" />
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li v-for="(item, index) in dataUser" :key="dataUser[index]">
+        <a class="dropdown-item" href="#">{{ item }}</a>
+      </li>
     </ul>
   </div>
 </template>

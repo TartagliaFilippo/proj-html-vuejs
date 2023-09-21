@@ -5,7 +5,7 @@ export default {
   },
 
   props: {
-    data: String,
+    dataClass: Object,
   },
 };
 </script>
@@ -19,12 +19,15 @@ export default {
       data-bs-auto-close="true"
       aria-expanded="false"
     >
-      {{ data }}
+      {{ dataClass.title }}
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Menu item</a></li>
-      <li><a class="dropdown-item" href="#">Menu item</a></li>
-      <li><a class="dropdown-item" href="#">Menu item</a></li>
+      <li
+        v-for="(item, index) in dataClass.content"
+        :key="dataClass.content[index]"
+      >
+        <a class="dropdown-item" href="#">{{ item }}</a>
+      </li>
     </ul>
   </div>
 </template>

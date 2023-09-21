@@ -1,26 +1,32 @@
 <script>
-import { store } from "../../data/store";
-
 export default {
   data() {
     return {
-      store,
+      inputSearch: "",
     };
   },
+
+  emits: ["input-call"],
 };
 </script>
 
 <template>
   <div class="input-group">
     <input
-      v-model="store.inputSearch"
+      v-model="inputSearch"
+      @keyup.enter="$emit('input-call', inputSearch)"
       type="text"
       class="form-control"
       placeholder="Search.."
       aria-label="Recipient's username"
       aria-describedby="button-addon2"
     />
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+    <button
+      @click="$emit('input-call', inputSearch)"
+      class="btn btn-outline-secondary"
+      type="button"
+      id="button-addon2"
+    >
       <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
     </button>
   </div>

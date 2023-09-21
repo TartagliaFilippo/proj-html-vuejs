@@ -29,6 +29,14 @@ export default {
   margin: 40px 20px;
   padding: 3%;
 
+  h5 {
+    color: $titleColor;
+  }
+
+  p {
+    color: $textColor;
+  }
+
   .container-user {
     display: flex;
     gap: 30px;
@@ -46,6 +54,7 @@ export default {
       justify-content: center;
 
       h4 {
+        color: $titleColor;
         font-size: 16px;
       }
     }
