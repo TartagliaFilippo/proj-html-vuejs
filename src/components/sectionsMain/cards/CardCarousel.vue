@@ -19,10 +19,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../../style/partials/variables.scss" as *;
 .card-learners {
   width: 29%;
   height: 100%;
-  background-color: white;
+  background-color: $bgWhite;
   text-align: left;
   border-radius: 5px;
   margin: 40px 20px;

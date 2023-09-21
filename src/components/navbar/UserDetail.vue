@@ -21,15 +21,16 @@ export default {};
 </template>
 
 <style lang="scss" scoped>
+@use "../../style/partials/variables.scss" as *;
 .dropdown {
   .btn {
     height: 20px;
     width: 20px;
-    background-color: white;
-    color: black;
+    background-color: $bgWhite;
+    color: $titleColor;
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid black;
+    border: 2px solid $titleColor;
     padding: 0;
     margin: 0 10px;
 

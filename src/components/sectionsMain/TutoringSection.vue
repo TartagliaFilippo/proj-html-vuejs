@@ -98,6 +98,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../style/partials/variables.scss" as *;
 .wrapper {
   margin-bottom: 160px;
   .container {
@@ -105,12 +106,12 @@ export default {
     margin-top: 100px;
 
     h4 {
-      color: #9b99af;
+      color: $subTitleColor;
       font-size: 18px;
     }
 
     h2 {
-      color: #3f3a64;
+      color: $titleColor;
     }
 
     .container-cards {
@@ -145,7 +146,6 @@ export default {
 
         .svg-bg-1 {
           height: 170px;
-          color: #e5c791;
           position: absolute;
           top: -100px;
           left: -67px;
@@ -181,23 +181,23 @@ export default {
 
         h4 {
           span {
-            color: #3f3a64;
+            color: $titleColor;
             font-weight: bold;
           }
         }
 
         h1 {
-          color: #3f3a64;
+          color: $titleColor;
         }
 
         p {
-          color: #9b99af;
+          color: $subTitleColor;
           margin-bottom: 70px;
         }
 
         a {
           text-decoration: none;
-          color: #20ad96;
+          color: $buttonColor;
           font-weight: bold;
         }
       }

@@ -77,6 +77,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../style/partials/variables.scss" as *;
 .wrapper {
   margin-top: 100px;
   .container {
@@ -90,9 +91,9 @@ export default {
         text-align: left;
 
         p {
-          color: #958ea3;
+          color: $textColor;
           .link-free {
-            color: #20ad96;
+            color: $buttonColor;
             text-decoration: none;
           }
         }

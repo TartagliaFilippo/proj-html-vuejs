@@ -92,8 +92,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../style/partials/variables.scss" as *;
 .wrapper {
-  background-color: #f5f7fa;
+  background-color: $bgColor;
   padding: 100px 0 50px;
   .container {
     .footer-content {
@@ -102,14 +103,13 @@ export default {
       .left-content {
         .adress {
           h5 {
-            color: #353535;
+            color: $titleColor;
           }
           p {
-            color: #6e6e6e;
+            color: $textColor;
           }
         }
         .social {
-          color: #6e6e6e;
           display: flex;
           gap: 20px;
 
@@ -128,7 +128,7 @@ export default {
         }
 
         h5 {
-          color: #353535;
+          color: $titleColor;
           margin-bottom: 30px;
         }
 
@@ -136,7 +136,7 @@ export default {
           padding: 0;
 
           li {
-            color: #6e6e6e;
+            color: $textColor;
             list-style: none;
             padding: 0;
             margin-bottom: 20px;
@@ -145,7 +145,7 @@ export default {
       }
     }
     .text-center {
-      color: #6e6e6e;
+      color: $textColor;
       margin-top: 70px;
     }
   }

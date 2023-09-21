@@ -27,18 +27,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../style/partials/variables.scss" as *;
 .input-group {
   width: 25%;
 
   .form-control {
     border: none;
-    background-color: #f5f5f5;
+    background-color: $bgColor;
   }
 
   .btn {
     border: none;
-    background-color: #f5f5f5;
-    color: #20ad96;
+    background-color: $bgColor;
+    color: $buttonColor;
   }
 }
 </style>

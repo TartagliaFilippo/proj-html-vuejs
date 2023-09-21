@@ -23,9 +23,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../../style/partials/variables.scss" as *;
 .card-container {
   width: 40%;
-  background-color: white;
+  background-color: $bgWhite;
   border-radius: 10px;
 
   img {
@@ -38,16 +39,16 @@ export default {
     padding: 0 20px;
 
     h5 {
-      color: #9390a8;
+      color: $textColor;
       margin-top: 40px;
     }
 
     h4 {
-      color: #3f3a64;
+      color: $titleColor;
     }
 
     p {
-      color: #9390a8;
+      color: $textColor;
       margin-top: 20px;
 
       span {

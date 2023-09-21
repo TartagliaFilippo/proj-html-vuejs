@@ -30,10 +30,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../style/partials/variables.scss" as *;
 .btn-group {
   .btn {
-    background-color: white;
-    color: black;
+    background-color: $bgWhite;
+    color: $titleColor;
     border: none;
   }
 }

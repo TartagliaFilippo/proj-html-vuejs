@@ -25,6 +25,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../../style/partials/variables.scss" as *;
 .card-courses {
   width: 50%;
 
@@ -47,16 +48,16 @@ export default {
     text-align: left;
 
     h4 {
-      color: #20ad96;
+      color: $buttonColor;
     }
 
     h3 {
-      color: #3f3a64;
+      color: $titleColor;
       font-size: 25px;
     }
 
     span {
-      color: #9b99af;
+      color: $subTitleColor;
       margin-right: 30px;
     }
   }

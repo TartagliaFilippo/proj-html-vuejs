@@ -46,8 +46,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../style/partials/variables.scss" as *;
 .wrapper {
-  background-color: white;
+  background-color: $bgWhite;
 
   .container {
     display: flex;

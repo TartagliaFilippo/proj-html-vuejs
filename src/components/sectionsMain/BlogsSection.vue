@@ -59,19 +59,20 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../style/partials/variables.scss" as *;
 .wrapper {
-  background-color: #f5f7fa;
+  background-color: $bgColor;
   padding: 120px 0;
   .container {
     display: flex;
     .text-container {
       h4 {
-        color: #9b99af;
+        color: $subTitleColor;
         font-size: 18px;
       }
 
       h2 {
-        color: #3f3a64;
+        color: $titleColor;
       }
     }
 

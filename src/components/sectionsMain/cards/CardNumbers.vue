@@ -13,12 +13,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../../style/partials/variables.scss" as *;
 .card-container {
   width: 25%;
-  background-color: white;
+  background-color: $bgWhite;
 
   text-align: center;
-  border: 1px solid #f5f7fa;
+  border: 2px solid $bgColor;
   padding: 60px 40px;
 
   h3 {
@@ -26,14 +27,14 @@ export default {
   }
 
   h1 {
-    color: #20ad96;
+    color: $buttonColor;
     font-size: 60px;
     font-weight: bolder;
     margin: 40px 0;
   }
 
   h4 {
-    color: #958ea3;
+    color: $textColor;
   }
 }
 </style>

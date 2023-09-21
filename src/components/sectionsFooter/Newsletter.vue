@@ -42,6 +42,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../style/partials/variables.scss" as *;
 .wrapper {
   padding: 100px 0;
   .container {
@@ -51,10 +52,10 @@ export default {
     position: relative;
 
     h2 {
-      color: #3f3a64;
+      color: $titleColor;
     }
     h4 {
-      color: #797979;
+      color: $subTitleColor;
       margin: 20px 0 60px;
     }
     .input-group {

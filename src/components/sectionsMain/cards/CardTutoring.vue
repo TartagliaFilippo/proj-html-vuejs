@@ -16,22 +16,23 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../../style/partials/variables.scss" as *;
 .card-tutoring {
   width: 28%;
   margin-top: 50px;
 
   h3 {
-    color: #3f3a64;
+    color: $titleColor;
     margin: 30px 0;
   }
 
   p {
-    color: #9b99af;
+    color: $subTitleColor;
   }
 
   a {
     text-decoration: none;
-    color: #9b99af;
+    color: $subTitleColor;
     font-weight: bold;
   }
 }
